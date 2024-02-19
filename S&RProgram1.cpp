@@ -22,11 +22,12 @@ int main()
 
 	cout << mathOperator;
 
-	//if (mathOperator != "+" && mathOperator != "-" && mathOperator != "*" && mathOperator != "/")
-		//cout << "Error: Unsupported Operator Type " << endl;
-		//cout << "Math operator: ";
-		//cin >> mathOperator;
-	
+	if (mathOperator != "+" && mathOperator != "-" && mathOperator != "*" && mathOperator != "/") {
+		cout << "Error: Unsupported Operator Type " << endl;
+		cout << "Math operator: ";
+		cin >> mathOperator;
+
+	}
 
 	if (mathOperator != "+") {
 		if (mathOperator != "-") {
