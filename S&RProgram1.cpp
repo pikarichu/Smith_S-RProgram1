@@ -20,13 +20,10 @@ int main()
 	cout << "Math Operator: ";
 	cin >> mathOperator;
 
-	cout << mathOperator;
-
-	if (mathOperator != "+" && mathOperator != "-" && mathOperator != "*" && mathOperator != "/") {
+	while (mathOperator != "+" && mathOperator != "-" && mathOperator != "*" && mathOperator != "/") {
 		cout << "Error: Unsupported Operator Type " << endl;
 		cout << "Math operator: ";
 		cin >> mathOperator;
-
 	}
 
 	if (mathOperator != "+") {
@@ -35,9 +32,10 @@ int main()
 				if (mathOperator == "/" && number2 != 0) {
 					outputNumber = number1 / number2;
 				}
-				else
+				else {
 					cout << "Error, division by 0";
 					return 0;
+				}
 			}
 			else
 				outputNumber = number1 * number2;
